@@ -40,12 +40,10 @@ code {
 }
 
 /*----------------------------------------------------*/
-/*CaffeThread custom CSS*/
+/* CaffeThread custom CSS */
 
-h1 {
-  text-align: center;
+/* Exertit */
+#exertit_header .jumbotron {
+  background-color:#00B6CF;
 }
 
-h3 {
-  text-align: center;
-}
