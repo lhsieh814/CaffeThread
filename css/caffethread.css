@@ -42,6 +42,11 @@ code {
 /*----------------------------------------------------*/
 /* CaffeThread custom CSS */
 
+/*Change entire site font to Montserrat*/
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Exertit */
 #exertit_header .jumbotron {
   background-color:#00B6CF;
