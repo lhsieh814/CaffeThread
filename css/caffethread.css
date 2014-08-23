@@ -41,19 +41,40 @@ code {
 
 /*----------------------------------------------------*/
 /* CaffeThread custom CSS */
+/*----------------------------------------------------*/
 
 /*Change entire site font to Montserrat*/
 * {
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+/*Default navbar color*/
+.navbar-inverse .navbar-nav > li > a {
   color: #00B6CF;
 }
 
-/* Exertit */
-#exertit_header .jumbotron {
+/*Active and hover navbar color*/
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > .active > a {
+    color: #FFFFFF;
+}
+
+/*----------------------------------------------------*/
+/* Exertit.html */
+/*----------------------------------------------------*/
+
+#exertit-header .jumbotron {
   background-color:#00B6CF;
   color: white;
 }
+
+.exertit-section-light .jumbotron {
+  margin-bottom: 0px;
+  background-color: #FFFFFF;
+}
+
+.exertit-section-dark .jumbotron {
+  margin-bottom: 0px;
+}
+
 
