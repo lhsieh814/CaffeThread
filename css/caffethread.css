@@ -55,19 +55,52 @@ code {
 
 /*Active and hover navbar color*/
 .navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > .active > a {
-    color: #FFFFFF;
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #35CCB8;
+}
+
+p {
+  color: grey;
+  font-size: 1.2em;
+}
+
+.container > .row > .col-md-4 > ul > li {
+    color: grey;
+    font-size: 1.1em;
+}
+
+.exertit-section-light > .container {
+  padding: 50px;
+}
+
+#caffethread-header .jumbotron {
+  background-color:#00B6CF;
+  color: white;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.email {
+  color: #000;
+  background-color: #FFFFFF;
+  border-color: #35CCB8;
+  border-width: 3px;
+  margin: 0 auto;
+  width: 50%;
+
+}
+.email:hover {
+  color: #000;
+  background-color: #35CCB8;
+  border-color: #35CCB8;
 }
 
 /*----------------------------------------------------*/
 /* Exertit.html */
 /*----------------------------------------------------*/
-
-#exertit-header .jumbotron {
-  background-color:#00B6CF;
-  color: white;
-}
-
 .exertit-section-light .jumbotron {
   margin-bottom: 0px;
   background-color: #FFFFFF;
@@ -77,4 +110,6 @@ code {
   margin-bottom: 0px;
 }
 
-
+/*----------------------------------------------------*/
+/* Contact.html */
+/*----------------------------------------------------*/
