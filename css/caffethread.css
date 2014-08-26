@@ -57,17 +57,37 @@ code {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover {
-    color: #35CCB8;
+   color: #35CCB8;
 }
 
-p {
-  color: grey;
+/*Override bootstrap default container*/
+@media (min-width: 1200px) {
+  .container {
+   width: 970px;
+}
+}
+
+#contact-email {
+  color: #999;
   font-size: 1.2em;
 }
 
-.container > .row > .col-md-4 > ul > li {
-    color: grey;
+.text {
+  /*color: #999;*/
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}
+.text > a {
+    color: #35CCB8;
     font-size: 1.1em;
+}
+.text-link > a:hover {
+    color: #35CCB8;
+}
+
+.container > .row > .col-md-4 > ul > li {
+   color: #999;
+   font-size: 1.1em;
 }
 
 .exertit-section-light > .container {
@@ -80,12 +100,13 @@ p {
 }
 
 .jumbotron {
-    margin-bottom: 0px;
+   margin-bottom: 0px;
 }
 
 .email {
-  color: #000;
+  color: #35CCB8;
   background-color: #FFFFFF;
+  border-radius: 30px;
   border-color: #35CCB8;
   border-width: 3px;
   margin: 0 auto;
@@ -93,9 +114,16 @@ p {
 
 }
 .email:hover {
-  color: #000;
+  color: #FFF;
   background-color: #35CCB8;
   border-color: #35CCB8;
+}
+
+/*----------------------------------------------------*/
+/* index.html */
+/*----------------------------------------------------*/
+#home-title {
+    color: #00B6CF;
 }
 
 /*----------------------------------------------------*/
@@ -111,5 +139,47 @@ p {
 }
 
 /*----------------------------------------------------*/
+/* Blog.html */
+/*----------------------------------------------------*/
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 30px;
+  color: #00B6CF;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+/*Side menu links*/
+.list-unstyled > li > a {
+  color: #00B6CF;
+}
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+  border-width: 3px;
+  border-color: #35CCB8;
+  color: #35CCB8;
+}
+.pager > li > a:hover {
+  color: #FFF;
+  background-color: #35CCB8;
+  border-color: #35CCB8;
+}
+/*----------------------------------------------------*/
 /* Contact.html */
 /*----------------------------------------------------*/
+
+
