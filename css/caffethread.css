@@ -62,7 +62,7 @@ code {
 
 /*Override bootstrap default container*/
 @media (min-width: 1200px) {
-  .container {
+  .caffethread-header > .jumbotron > .container {
    width: 970px;
 }
 }
@@ -98,7 +98,7 @@ a:hover {
    font-size: 1.1em;
 }
 
-#caffethread-header .jumbotron {
+.caffethread-header .jumbotron {
   background-color:#00B6CF;
   color: white;
 }
@@ -130,33 +130,35 @@ a:hover {
     color: #00B6CF;
 }
 
-/*Override row from bootstrap*/
-.home-grid {
-    width: 1170px;
-}
-
 /*Add extra to the col-md-2 from bootstrap*/
 .social-media {
     margin-top: 20px;
 }
 .social-media > p {
-    font-size: 1.2em;   
+    font-size: 1.1em;   
 }
 
 .glyphicon {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 /*----------------------------------------------------*/
 /* Exertit.html */
 /*----------------------------------------------------*/
+
+/*Override bootstrap default container*/
+@media (min-width: 1200px) {
+  .smaller-width {
+   width: 970px;
+}
+}
 
 /*light sections*/
 .exertit-section-light {
   margin-bottom: 0px;
   background-color: #FFFFFF;
 }
-.exertit-section-light > .container {
-  padding: 50px;
+.exertit-section-light > .container > .row > .col-md-8 {
+    padding: 100px 0px 50px 50px;
 }
 
 /*dark sections*/
