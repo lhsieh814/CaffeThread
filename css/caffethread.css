@@ -77,16 +77,16 @@ code {
 
 /*Override bootstrap link color*/
 a {
-    color: #000;
+    color: #35CCB8;
 }
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: #35CCB8;
 }
 
 .text {
   /*color: #999;*/
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding-bottom: 1em;
 }
 .text > a {
@@ -121,6 +121,13 @@ a:hover {
 }
 .social-media > p {
     font-size: 1.1em;   
+}
+.social-media > p > a {
+  color: #000;
+}
+.social-media > p > a:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 .glyphicon {
@@ -176,6 +183,7 @@ a:hover {
 /*----------------------------------------------------*/
 .blog-post {
   margin-bottom: 60px;
+  border-top: 2px solid #35CCB8;
 }
 .blog-post-title {
   margin-bottom: 5px;
@@ -211,6 +219,33 @@ a:hover {
   background-color: #35CCB8;
   border-color: #35CCB8;
 }
+
+/*blog-text*/
+.blog-post > p {
+  font-size: 1.1em;
+  padding-bottom: 0.5em;
+}
+.blog-post > ol > li {
+  margin-bottom: 15px;
+}
+
+/*Terminal style*/
+.terminal {
+  overflow: auto;
+  width: auto;
+  padding: .2em .6em;
+  border-radius: 5px;
+  font-family: Courier;
+  background: #000000;
+}
+.terminal > pre {
+  margin: 0;
+  line-height: 125%;
+  border: 0px;
+  background: #000000;
+  color: #FFF;
+}
+
 /*----------------------------------------------------*/
 /* Contact.html */
 /*----------------------------------------------------*/

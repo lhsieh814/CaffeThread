@@ -66,7 +66,7 @@
                 <div class="jumbotron">
                         <div class="container">
                                 <h1>CaffeThread Blog</h1>
-                                <h4>Tutorials, reviews and random stuff</h4>
+                                <h4>Tutorials, Reviews and Random Stuff</h4>
                         </div>
                 </div>
         </div>
@@ -75,20 +75,95 @@
                 <div class="row">
                 <div class="col-sm-8 blog-main">
 
+
                     <div class="blog-post">
-<!--             <h2 class="blog-post-title">Managing Multiple Github Accounts</h2>
-                        <p class="blog-post-meta">February 23, 2014</p> -->
+                        <h2 class="blog-post-title">iOS Tutorials: Learn By Doing</h2>
+                        <p class="blog-post-meta">March 30, 2014</p>
+                        <p>As a newbie in iPhone development, one of my favourite sites to go to for tutorials is <a href="http://www.raywenderlich.com/">Ray Wenderlich</a>.</p>
+                        <p>It has a huge collection of written tutorials that shows step-by-step instructions for popular iOS topics. They provide clear screen shots as well as code snippets. After each code snippet, they explain what each line does and some brief theory on the iOS API. Another things that is cool about these tutorials is that users can download a starter project (rather than starting from scratch and creating the views and object c classes). Users can jump right in and follow the steps to complete the project. If you ever get stuck, they include a download link for the full completed project.</p>
+                        <p>I am not a theory kind of person; I learn best from doing. It is not very motivating to have to read +600 pages book on iOS development. In the end, I end up giving up after the first two chapters! From Ray Wenderlich’s site, I learn while doing. It is a lot more motivating to be able to create a working app (even if it is just copying and pasting code), than to wait weeks before diving to do actual coding. The site also sells ebooks on iOS development and keeps up to date to the latest versions.</p>
+                    </div><!-- /.blog-post -->
+
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Review: Pocket</h2>
+                        <p class="blog-post-meta">February 25, 2014</p>
+                        <p>I started using the iOS and android app call Pocket. Basically, Pocket is a service that allows users to save webpages/articles from the browser or news apps to be read later (even offline). It is synced across devices (iOS and android) and even has plugins for common web browsers such as chrome, safari and Firefox.</p>
+                        <p>I use safari on my MacBook and was able install their bookmarklet (adds a small icon above the favorites bar) for quick saving of webpages. So far, I am pretty satisfied with the app and ease of use. Idea is simple, UI is clean and does its job. I can see myself potentially using Pocket to save articles to read for when I am in the metro. As a plus, Flipboard and many other apps supports Pocket, meaning I can save articles from Flipboard in my Pocket list.</p>
+                        <p>Definitely worth it to checkout <a href="http://getpocket.com">Pocket</a>.</p>
+                    </div><!-- /.blog-post -->
+
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Managing Multiple Github Accounts</h2>
+                        <p class="blog-post-meta">February 23, 2014</p>
+                        <p>I've recently created a private github account but I didn't want to delete my current public github account. Hence I had two github accounts with two separate ssh keys. I couldn't push/pull from the private account since it didn't know which ssh key to use.</p>
+                        <p>Finally found the solution from these two sites:</p>
+                        <ul>
+                            <li><a href="http://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574">Code.Tutsplus- How to Work with Github and Multiple Accounts</a></li>
+                            <br>
+                            <li><a href="https://gist.github.com/jexchan/2351996">Github/jexchan- Multiple SSH Keys Settings for Different Github Account</a></li>
+                        </ul>
+                        <br><br>
+                        <p>I will give a tutorial here since it was a combination of the two sites that gave me the correct settings. (Works for public or private accounts)</p>
+
+                        <h4>Create the ssh keys</h4>
+                        <p>Assuming we have two github accounts with their ssh keys under <i>~/.ssh</i></p>
+                        <pre>~/.ssh/id_rsa_personal<br>~/.ssh/id_rsa_work</pre>
+                        <p>We have a personal github account and a work account.</p>
+
+                        <h4>Create the config file</h4>
+                        <p>Under <i>~/.ssh</i> , we need to create a file call config.</p>
+                        <div class="terminal"><pre>cd ~/.ssh/<br>vim config</pre></div>
+                        <br>
+                        <p>Edit the config file as follow:</p>
+<pre>#Personal GitHub account
+Host github.com-personal
+HostName github.com
+IdentityFile ~/.ssh/id_rsa_personal
+IdentitiesOnly yes
+
+# Personal GitHub account
+Host github.com-personal
+HostName github.com
+IdentityFile ~/.ssh/id_rsa_personal
+IdentitiesOnly yes</pre>
+                        <p>The Host can be named anything you want.</p>
+
+                        <h4>Cloning the git repository</h4>
+                        <p>Given that the ssh clone URL of your personal git repository is:</p>
+                        <p><i>git@github.com:username/RepoName.git</i></p>
+                        <p>Then in order to clone it, we need to replace the <i>github.com</i> with <i>github.com-personal</i>.</p>
+                        <div class="terminal"><pre>git clone git@github.com-personal:username/RepoName.git</pre></div>
+                        <br>
+                        <p>Similarly, if the repository was from the work github, then it'll be:</p>
+                        <div class="terminal"><pre>git clone git@github.com-work:username/RepoName.git</pre></div><br>
+
+                        <h4>Initializing an empty git repo</h4>
+                        <p>Given that we want to add existing local code to a new repository on github.</p>
+                        <ol>
+                            <li>Create an empty repo on github.</li>
+                            <li>On the computer under the project, we need to initialize the git.
+                                <div class="terminal"><pre>git init</pre></div></li>
+                            <li>Then do the normal git add and git commit commands:
+                                <div class="terminal"><pre>git add .<br>git commit -m "initial commit"</<pre></div></li>
+                            <li>Next, we need to set the remote repository to the one we just created.
+                                <div class="terminal"><pre>git remote add origin git@github.com-personal:username/RepoName.git</pre></div></li>
+                            <li>Lastly, push the first commit:
+                                <div class="terminal"><pre>git push -u origin master</pre></div></li>
+                            <li>From here onwards, you can do the normal commands
+                                <div class="terminal"><pre>git push</pre></div></li>
+                        </ol>
+
                     </div><!-- /.blog-post -->
 
                     <!-- Pagination -->
-                    <ul class="pager">
+<!--                     <ul class="pager">
                         <li><a href="#">Previous</a></li>
                         <li><a href="#">Next</a></li>
-                    </ul>
+                    </ul> -->
                 </div><!-- /.blog-main -->
 
                 <!-- Side bar -->
-                <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<!--                 <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
                         <div class="sidebar-module">
                                 <h4>Categories</h4>
                                 <ul class="list-unstyled">
@@ -104,7 +179,8 @@
                                         <li><a href="#">August 2014</a></li>
                                 </ul>
                         </div>
-                </div><!-- /.blog-sidebar -->
+                </div> -->
+                <!-- /.blog-sidebar -->
 
             </div><!-- /.row -->
     </div>
