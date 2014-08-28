@@ -24,7 +24,7 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  /* padding: 60px 15px 0; */
+   padding: 60px 15px 0; 
 }
 .container .text-muted {
   margin: 20px 0;
@@ -46,6 +46,14 @@ code {
 /*Change entire site font to Montserrat*/
 * {
   font-family: 'Montserrat', sans-serif;
+}
+
+.navBarTheme {
+    color: #00B6CF;
+}
+
+.lightGreenTheme {
+    color: #35CCB8;
 }
 
 /*Default navbar color*/
@@ -75,14 +83,10 @@ a:hover {
     text-decoration: none;
     color: #35CCB8;
 }
-#contact-email {
-  color: #999;
-  font-size: 1.2em;
-}
 
 .text {
   /*color: #999;*/
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding-bottom: 1em;
 }
 .text > a {
@@ -107,28 +111,9 @@ a:hover {
    margin-bottom: 0px;
 }
 
-.email {
-  color: #35CCB8;
-  background-color: #FFFFFF;
-  border-radius: 30px;
-  border-color: #35CCB8;
-  border-width: 3px;
-  margin: 0 auto;
-  width: 50%;
-
-}
-.email:hover {
-  color: #FFF;
-  background-color: #35CCB8;
-  border-color: #35CCB8;
-}
-
 /*----------------------------------------------------*/
 /* index.html */
 /*----------------------------------------------------*/
-.navBarTheme {
-    color: #00B6CF;
-}
 
 /*Add extra to the col-md-2 from bootstrap*/
 .social-media {
@@ -157,6 +142,9 @@ a:hover {
   margin-bottom: 0px;
   background-color: #FFFFFF;
 }
+.exertit-section-light > .container {
+  padding: 50px;
+}
 .exertit-section-light > .container > .row > .col-md-8 {
     padding: 100px 0px 50px 50px;
 }
@@ -164,13 +152,23 @@ a:hover {
 /*dark sections*/
 .exertit-section-dark {
   margin-bottom: 0px;
-  background-color: #C4C4C4;
+  background-color: #E4E4E4;
 }
 .exertit-section-dark > .container {
   padding: 50px;
 }
 .exertit-section-dark > .container > .row > .col-md-8 {
     padding: 100px 0px 50px 50px;
+}
+
+/*Center the elements*/
+#exertit-support {
+    text-align: center;
+}
+
+/*Add spacing between lists*/
+.text > li {
+    margin-bottom: 1em;
 }
 
 /*----------------------------------------------------*/
@@ -217,4 +215,23 @@ a:hover {
 /* Contact.html */
 /*----------------------------------------------------*/
 
+.email {
+  color: #35CCB8;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  border-color: #35CCB8;
+  border-width: 3px;
+  margin: 0 auto;
+  width: 50%;  
+}
+.email:hover {
+  color: #FFF;
+  background-color: #35CCB8;
+  border-color: #35CCB8;
+}
 
+#contact-email {
+  color: #999;
+  font-size: 1.2em;
+  text-align: center;
+}
