@@ -95,10 +95,12 @@
         <div class="jumbotron">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-10">
-                        <h2>Lena Hsieh</h2>
-                        <h4>Curious about tech and all things related</h4>
+                    <div class="col-md-3">
+                        <img src="images/profile_pic.JPG" class="img-responsive circle-image">
+                    </div>
+                    <div class="col-md-9" id="profile_pic">
+                        <div id="name">Lena Hsieh</div>
+                        <h3>Curious About Tech and All Things Related</h3>
                     </div>
                 </div>
             </div>
@@ -134,16 +136,20 @@
                             </p>
 
                             <br>
+
+                            <a href="technologies" class="scrollToTop"><img id="up-arrow" src="images/up-arrow.png"></a>
+
                             <br>
                             <h4>About Me</h4>
                             <ul class="page-link">
-                                <li><a class="navBarTheme" href="#technologies">TECHNOLOGIES</a></li>
-                                <li><a class="navBarTheme" href="#projects">PROJECTS</a></li>
-                                <li><a class="navBarTheme" href="#work-experience">WORK EXPERIENCE</a></li>
+                                <li><a class="navBarTheme page-scroll" href="#technologies">TECHNOLOGIES</a></li>
+                                <li><a class="navBarTheme page-scroll" href="#side-projects">SIDE PROJECTS</a></li>
+                                <li><a class="navBarTheme page-scroll" href="#projects">PROJECTS</a></li>
+                                <li><a class="navBarTheme page-scroll" href="#work-experience">WORK EXPERIENCE</a></li>
                             </ul>
 
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10" id="welcome">
                             <h2 class="navBarTheme">Hi, Welcome to CaffeThread!</h2>
                             <br>
                             <p class="text">
@@ -162,149 +168,189 @@
                                 Feel free to connect with me via the side links. The rest of this page is an html version (more elaborate) of my CV. You can also download a PDF version from the side link, or view my profile on LinkedIn.
                             </p>
                             <br>
+                            <section id="technologies">
+                                <h3 class="cv-title">
+                                    <a name="technologies"> <b>TECHNOLOGIES</b>
+                                    </a>
+                                </h3>
+                                <br>
+                                <div class="prog-div">
+                                    <span class="prog-lang">Java</span>
+                                    <span class="prog-lang">Objective C</span>
+                                    <span class="prog-lang">iOS</span>
+                                    <span class="prog-lang">Android</span>
+                                    <span class="prog-lang">C</span>
+                                    <span class="prog-lang">C#</span>
+                                    <span class="prog-lang">HTML5</span>
+                                    <span class="prog-lang">CSS3</span>
+                                    <span class="prog-lang">JavaScript</span>
+                                    <span class="prog-lang">TTCN</span>
+                                    <span class="prog-lang">VHDL</span>
+                                </div>
+                                <div class="prog-div">
+                                    <span class="prog-lang">Sublime Text</span>
+                                    <span class="prog-lang">vim</span>
+                                    <span class="prog-lang">Eclipse</span>
+                                    <span class="prog-lang">IntelliJ</span>
+                                    <span class="prog-lang">Android Studio</span>
+                                    <span class="prog-lang">Xamarin Studio</span>
+                                </div>
+                                <div class="prog-div">
+                                    <span class="prog-lang">Git</span>
+                                    <span class="prog-lang">Perforce</span>
+                                    <span class="prog-lang">Redmine</span>
+                                    <span class="prog-lang">JIRA</span>
+                                    <span class="prog-lang">Jenkins</span>
+                                </div>
+                                <div class="prog-div">
+                                    <span class="prog-lang">Illustrator</span>
+                                    <span class="prog-lang">Photoshop</span>
+                                    <span class="prog-lang">CorelDraw</span>
+                                </div>
+                            </section>
 
-                            <h4 class="cv-title">
-                                <a name="technologies"> <b>TECHNOLOGIES</b>
-                                </a>
-                            </h4>
-                            <br>
-                            <div class="prog-div">
-                                <span class="prog-lang">Java</span>
-                                <span class="prog-lang">C</span>
-                                <span class="prog-lang">C#</span>
-                                <span class="prog-lang">Objective C</span>
-                                <span class="prog-lang">HTML5</span>
-                                <span class="prog-lang">CSS3</span>
-                                <span class="prog-lang">JavaScript</span>
-                                <span class="prog-lang">Groovy</span>
-                                <span class="prog-lang">TTCN</span>
-                                <span class="prog-lang">VHDL</span>
-                                <span class="prog-lang">MIPS</span>
-                            </div>
-                            <div class="prog-div">
-                                <span class="prog-lang">Sublime Text</span>
-                                <span class="prog-lang">vim</span>
-                                <span class="prog-lang">Eclipse</span>
-                                <span class="prog-lang">IntelliJ</span>
-                                <span class="prog-lang">Xamarin Studio</span>
-                            </div>
-                            <div class="prog-div">
-                                <span class="prog-lang">Git</span>
-                                <span class="prog-lang">Perforce</span>
-                                <span class="prog-lang">Redmine</span>
-                                <span class="prog-lang">JIRA</span>
-                                <span class="prog-lang">Jenkins</span>
-                            </div>
-                            <div class="prog-div">
-                                <span class="prog-lang">Illustrator</span>
-                                <span class="prog-lang">Photoshop</span>
-                                <span class="prog-lang">CorelDraw</span>
-                                <span class="prog-lang">MatLab</span>
-                            </div>
+                            <section id="side-projects">
+                                <h3 class="cv-title">
+                                    <a name="side-projects">
+                                        <b>SIDE PROJECTS</b>
+                                    </a>
+                                </h3>
 
-                            <h4 class="cv-title">
-                                <a name="projects">
-                                    <b>PROJECTS</b>
-                                </a>
-                            </h4>
-
-                            <h4 class="cv-subtitles">Exert It- Elegant and simple workout to-do list (iOS app)</h4>
-                            <h5 class="cv-subheader">Exert It webpage- <a href="exertit.html">http://caffethread.com/exertit</a></h5>
-                            <h5 class="cv-subheader">App Store link- <a href="https://itunes.apple.com/us/app/exertit/id908885162?mt=8" target="_blank">https://itunes.apple.com/us/app/exertit/id908885162?mt=8</a></h5>
-                            <ul>
-                                <li>
-                                    Developed iOS 7 compatible fitness app for iphone using Objective-C and Xcode5.
-                                </li>
-                                <li>
-                                    Used Adobe Illustrator to create vector icons.
-                                </li>
-                                <li>
-                                    Designed a clean and simple user-interface to keep track of workouts and exercises.
-                                </li>
-                            </ul>
+                                <h4 class="cv-subtitles">Exert It- Elegant and simple workout to-do list (iOS app)</h4>
+                                <h5 class="cv-subheader">Exert It webpage- <a href="exertit.html">http://caffethread.com/exertit</a></h5>
+                                <h5 class="cv-subheader">App Store link- <a href="https://itunes.apple.com/us/app/exertit/id908885162?mt=8" target="_blank">https://itunes.apple.com/us/app/exertit/id908885162?mt=8</a></h5>
+                                <ul>
+                                    <li>
+                                        Developed iOS 7 compatible fitness app for iphone using Objective-C and Xcode5.
+                                    </li>
+                                    <li>
+                                        Used Adobe Illustrator to create vector icons.
+                                    </li>
+                                    <li>
+                                        Designed a clean and simple user-interface to keep track of workouts and exercises.
+                                    </li>
+                                </ul>
 
 
-                            <h4 class="cv-subtitles">CaffeThread.com- Personal website and blog</h4>
-                            <ul>
-                                <li>
-                                    Created personal website/blog using Bootstrap framework, HTML5, CSS3 and JavaScript.
-                                </li>
-                            </ul>
+                                <h4 class="cv-subtitles">CaffeThread.com- Personal website and blog</h4>
+                                <ul>
+                                    <li>
+                                        Created personal website/blog using Bootstrap framework, HTML5, CSS3 and JavaScript.
+                                    </li>
+                                </ul>
+                            </section>
 
-                            <h4 class="cv-title">
-                                <a name="work-experience">
-                                    <b>WORK EXPERIENCE</b>
-                                </a>
-                            </h4>
+                            <section id="projects">
+                                <h3 class="cv-title">
+                                    <a name="projects">
+                                        <b>PROJECTS</b>
+                                    </a>
+                                </h3>
 
-                            <h4 class="cv-subtitles">Java Software Developer Intern (May- August 2014)</h4>
-                            <h5 class="cv-subheader">Silanis Technology, Montreal, Quebec</h5>
-                            <ul>
-                                <li>
-                                    Mapped REST API calls to the company's Java and .NET SDKs.
-                                </li>
-                                <li>
-                                    Wrote builders, converters and service classes to simplify clients' integration with e-SignLive product
-                                </li>
-                                <li>Wrote and maintained JUnit and NUnit tests.</li>
-                                <li>Provided hotfixes for bugs in the SDKs.</li>
-                                <li>
-                                    Documented the SDKs in the company's DokuWik. Wrote JavaDocs and example code for clients.
-                                </li>
-                            </ul>
+                                <h4 class="cv-subtitles">Design Project- Android app to simplify in-store purchase of physical products (Current)</h4>
+                                <ul>
+                                    <li>
+                                        Build a mobile app on the Android platform to scan shopping items’ barcode using ZXing, mobile payment via Stripe and generate a QR code to validate payment.
+                                    </li>
+                                    <li>
+                                        Node.js with Express and host on Heroku to communicate with Stripe’s server.
+                                    </li>
+                                </ul>
 
-                            <h4 class="cv-subtitles">Software Developer Intern (January- April 2014)</h4>
-                            <h5 class="cv-subheader">Ericsson, Montreal, Quebec</h5>
-                            <ul>
-                                <li>
-                                    Built a demo web app using the company's JavaScript library and WebRTC. Users can call, video chat and chat via an iframe.
-                                </li>
-                                <li>
-                                    Created an how-to guide website for the company's WebRTC JavaScript library. Wrote documentation and sample code.
-                                </li>
-                                <li>
-                                    Helped write more than 100 automated test cases for Ericsson's Web Communication Gateway using TTCN, a testing framework.
-                                </li>
-                                <li>
-                                    Designed flow diagrams for test cases based on requirements and documented in PlantUML.
-                                </li>
-                                <li>
-                                    Debugged automated test cases using knowledge of SIP protocol, Wireshark and logs.
-                                </li>
-                            </ul>
+                                 <h4 class="cv-subtitles">Web application to plan and manage events (Current)</h4>
+                                <ul>
+                                    <li>
+                                        Integrate Google account OAuth 2.0 authentication to access user’s calendar. Create and invite users to events. Share to-do lists and send reminders via e-mail or SMS.
+                                    </li>
+                                </ul>
 
-                            <h4 class="cv-subtitles">Network Management Intern (May- August 2013)</h4>
-                            <h5 class="cv-subheader">Ciena, Ottawa, Ontario</h5>
-                            <ul>
-                                <li>Refactored and improved the design simulator code.</li>
-                                <li>
-                                    Designed and developed release features for the design simulator.
-                                </li>
-                                <li>
-                                    Wrote and debugged JUnit tests and automated integration tests using Eclipse and logs.
-                                </li>
-                                <li>Participated in agile development and code inspections.</li>
-                            </ul>
+                                <h4 class="cv-subtitles">Image Manipulation – Android App</h4>
+                                <ul>
+                                    <li>
+                                        Convert an image to a bitmap and then flip or rotate image based on user’s inputs.
+                                    </li>
+                                    <li>
+                                        Compared computation time of serial vs. parallel (Java Threads) using various matrix sizes and thread counts.
+                                    </li>
+                                </ul>
+                            </section>
 
-                            <h4 class="cv-subtitles">Java Software Developer Intern (January- April 2013)</h4>
-                            <h5 class="cv-subheader">Silanis Technology, Montreal, Quebec</h5>
-                            <ul>
-                                <li>
-                                    Worked on the e-SignLive team as a backend Java developer for a SaaS-based e-signature product.
-                                </li>
-                                <li>
-                                    Wrote, refactored and unit tested Java code on IntelliJ IDE to implement new features.
-                                </li>
-                                <li>
-                                    Developed a Java and C# SDK to simplify clients’ integration with the product. Hid the REST HTTP methods and JSON serialization/deserialization from model objects behind service classes.
-                                </li>
-                                <li>
-                                    Exposure to Spring framework, JBoss, Apache, Maven, Redmine and JUnit.
-                                </li>
-                                <li>
-                                    Followed Agile Scrum and participated in two-week long sprints.
-                                </li>
-                            </ul>
+                            <section id="work-experience">
+                                <h3 class="cv-title">
+                                    <a name="work-experience">
+                                        <b>WORK EXPERIENCE</b>
+                                    </a>
+                                </h3>
+
+                                <h4 class="cv-subtitles">Java Software Developer Intern (May- August 2014)</h4>
+                                <h5 class="cv-subheader">Silanis Technology, Montreal, Quebec</h5>
+                                <ul>
+                                    <li>
+                                        Mapped REST API calls to the company's Java and .NET SDKs.
+                                    </li>
+                                    <li>
+                                        Wrote builders, converters and service classes to simplify clients' integration with e-SignLive product
+                                    </li>
+                                    <li>Wrote and maintained JUnit and NUnit tests.</li>
+                                    <li>Provided hotfixes for bugs in the SDKs.</li>
+                                    <li>
+                                        Documented the SDKs in the company's DokuWik. Wrote JavaDocs and example code for clients.
+                                    </li>
+                                </ul>
+
+                                <h4 class="cv-subtitles">Software Developer Intern (January- April 2014)</h4>
+                                <h5 class="cv-subheader">Ericsson, Montreal, Quebec</h5>
+                                <ul>
+                                    <li>
+                                        Built a demo web app using the company's JavaScript library and WebRTC. Users can call, video chat and chat via an iframe.
+                                    </li>
+                                    <li>
+                                        Created an how-to guide website for the company's WebRTC JavaScript library. Wrote documentation and sample code.
+                                    </li>
+                                    <li>
+                                        Helped write more than 100 automated test cases for Ericsson's Web Communication Gateway using TTCN, a testing framework.
+                                    </li>
+                                    <li>
+                                        Designed flow diagrams for test cases based on requirements and documented in PlantUML.
+                                    </li>
+                                    <li>
+                                        Debugged automated test cases using knowledge of SIP protocol, Wireshark and logs.
+                                    </li>
+                                </ul>
+
+                                <h4 class="cv-subtitles">Network Management Intern (May- August 2013)</h4>
+                                <h5 class="cv-subheader">Ciena, Ottawa, Ontario</h5>
+                                <ul>
+                                    <li>Refactored and improved the design simulator code.</li>
+                                    <li>
+                                        Designed and developed release features for the design simulator.
+                                    </li>
+                                    <li>
+                                        Wrote and debugged JUnit tests and automated integration tests using Eclipse and logs.
+                                    </li>
+                                    <li>Participated in agile development and code inspections.</li>
+                                </ul>
+
+                                <h4 class="cv-subtitles">Java Software Developer Intern (January- April 2013)</h4>
+                                <h5 class="cv-subheader">Silanis Technology, Montreal, Quebec</h5>
+                                <ul>
+                                    <li>
+                                        Worked on the e-SignLive team as a backend Java developer for a SaaS-based e-signature product.
+                                    </li>
+                                    <li>
+                                        Wrote, refactored and unit tested Java code on IntelliJ IDE to implement new features.
+                                    </li>
+                                    <li>
+                                        Developed a Java and C# SDK to simplify clients’ integration with the product. Hid the REST HTTP methods and JSON serialization/deserialization from model objects behind service classes.
+                                    </li>
+                                    <li>
+                                        Exposure to Spring framework, JBoss, Apache, Maven, Redmine and JUnit.
+                                    </li>
+                                    <li>
+                                        Followed Agile Scrum and participated in two-week long sprints.
+                                    </li>
+                                </ul>
+                            </section>
 
                         </div>
                     </div>
@@ -323,6 +369,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/caffethread.js"></script>
 </body>
 </html>
