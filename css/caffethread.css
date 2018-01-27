@@ -24,7 +24,7 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-   padding: 60px 15px 0; 
+   padding: 60px 80px 0; 
 }
 .container .text-muted {
   margin: 20px 0;
@@ -105,6 +105,8 @@ a:hover {
 .caffethread-header .jumbotron {
   background-color:#00B6CF;
   color: white;
+  padding-top: 90px;
+
 }
 
 .jumbotron {
@@ -114,6 +116,10 @@ a:hover {
 /*----------------------------------------------------*/
 /* index.html */
 /*----------------------------------------------------*/
+
+#name {
+  font-size: 40px;
+}
 
 /*Add extra to the col-md-2 from bootstrap*/
 .social-media {
@@ -182,6 +188,47 @@ a:hover {
     padding: 5px 7px 5px 7px;
     border-radius: 10px;
 }
+
+/* Circle profile pic */
+.circle-image {
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    display:block;
+    background-position-y:25% 
+}
+
+#profile_pic {
+  position: relative;
+  top: 50%;
+  bottom:20px;
+  -webkit-transform: translateY(+50%);
+}
+
+/* Scroll to top */
+.scrollToTop{
+  width:100px; 
+  height:130px;
+  padding:10px; 
+  text-align:center; 
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  display:none;
+  background: url('../images/up-arrow.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+}
+#up-arrow {
+  width:50px;
+  height:50px;
+}
+
 /*----------------------------------------------------*/
 /* Exertit.html */
 /*----------------------------------------------------*/
